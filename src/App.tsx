@@ -9,7 +9,8 @@ function App() {
     return (
         <Stack>
             <h1>Framer Motion Sandbox Lab</h1>
-            
+            <p>Visit <a href="https://examples.motion.dev/react">Motion.dev</a> for more examples</p>
+
             <Box description="Based on the state value I can use different animation styles"
                  title="Combining Keyframes & variants">
                 <Keyframes/>
@@ -19,7 +20,9 @@ function App() {
                 <Gestures/>
             </Box>
 
-            <Box description="Working with keframes" title="Keygrames with Variants">
+            <Box
+                description="Using custom values and indexes to tween between styles. useAnimationFrame increments to trigger fade-in's for example."
+                title="Using Motion values">
                 <MotionValues/>
             </Box>
         </Stack>
