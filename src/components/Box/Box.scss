@@ -1,0 +1,33 @@
+.content__box {
+  border: 1px solid #3e3e43;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: linear-gradient(#22222f94, #0a0c11d6);
+  box-shadow: 0 0 145px rgb(61 35 82 / 50%);
+
+  &__inner {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #eeeeee17;
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    > div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
+
+  }
+
+  &__buttons {
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+  }
+}
