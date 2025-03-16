@@ -4,6 +4,9 @@ import {Stack} from "./components/Stack/Stack.tsx";
 import {Keyframes} from "./examples/Keyframes/Keyframes.tsx";
 import {Gestures} from "./examples/Gestures/Gestures.tsx";
 import {MotionValues} from "./examples/MotionValues/MotionValues.tsx";
+import {ScrollTrigger} from "./examples/ScrollTrigger/ScrollTrigger.tsx";
+import {CircleIndicator} from "./examples/CircleIndicator/CircleIndicator.tsx";
+import {Drag} from "./examples/followPointer/followPointer.tsx";
 
 function App() {
     return (
@@ -25,7 +28,28 @@ function App() {
                 title="Using Motion values">
                 <MotionValues/>
             </Box>
+
+            <Box
+                description="No more scrollY problemsss"
+                title="ScrollTrigger">
+                <ScrollTrigger/>
+            </Box>
+
+            <Box
+                description="Scroll === Progress of Path in SVG"
+                title="CircleIndicator">
+                <CircleIndicator/>
+            </Box>
+
+            <Box
+                description="Scroll === Progress of Path in SVG"
+                title="CircleIndicator">
+                <Drag/>
+            </Box>
+
         </Stack>
+
+
     )
 }
 
